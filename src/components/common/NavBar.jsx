@@ -19,23 +19,23 @@ const NavBar = () => {
         <span className="navbar-toggler-icon" />
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/movies">
-              Movies <span className="sr-only" />
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/customers">
-              Customers
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/rentals">
-              Rentals
-            </NavLink>
-          </li>
-        </ul>
+        <div className="navbar-nav">
+          <NavLink className="nav-link" to="/movies">
+            Movies <span className="sr-only" />
+          </NavLink>
+          <NavLink className="nav-link" to="/customers">
+            Customers
+          </NavLink>
+          <NavLink className="nav-link" to="/rentals">
+            Rentals
+          </NavLink>
+          <NavLink className="nav-link" to="/register">
+            Register
+          </NavLink>
+          <NavLink className="nav-link" to="/login">
+            Log In
+          </NavLink>
+        </div>
       </div>
     </nav>
   );
